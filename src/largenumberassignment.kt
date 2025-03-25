@@ -1,18 +1,22 @@
+import java.util.Scanner
 fun main() {
+    var read = Scanner(System.`in`)
     print("Enter first number: ")
-    val num1 = readLine()!!.toDouble()
+    var num1 = read.nextInt()
 
     print("Enter second number: ")
-    val num2 = readLine()!!.toDouble()
+    var num2 = read.nextInt()
 
     print("Enter third number: ")
-    val num3 = readLine()!!.toDouble()
+    var num3 = read.nextInt()
 
-    val largest = if (num1 >= num2 && num1 >= num3) {
+    var largest = if (num1 >= num2 && num1 >= num3) {
         num1
-    } else if (num2 >= num1 && num2 >= num3) {
+    }
+    else if (num2 >= num1 && num2 >= num3) {
         num2
-    } else {
+    }
+    else {
         num3
     }
 
