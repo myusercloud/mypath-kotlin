@@ -1,18 +1,18 @@
 import java.util.Scanner
 
 fun main() {
-    val scanner = Scanner(System.`in`)
+    var scanner = Scanner(System.`in`)
 
     println("Enter first number: ")
-    val num1 = scanner.nextDouble()
+    var num1 = scanner.nextDouble()
 
     println("Enter an operator (+, -, *, /): ")
-    val operator = scanner.next()[0]
+    var operator = scanner.next()[0]
 
     println("Enter second number: ")
-    val num2 = scanner.nextDouble()
+    var num2 = scanner.nextDouble()
 
-    val result = when (operator) {
+    var result = when (operator) {
         '+' -> num1 + num2
         '-' -> num1 - num2
         '*' -> num1 * num2
